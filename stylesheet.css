@@ -14,20 +14,18 @@ body {
 }
 
 #nameImg {
-    width: 50px;
-    Height: auto;
+    width: 5.5vw;
+    Height: 5vw;
     float: left;
-    margin-top: 10px;
+    margin-top: .5vw;
 }
 
 #signature {
-    float:left;
-    line-height: 10px;
+    font-size: 3vw;
 }
 
-#NameBox {
-    overflow: hidden;
-    width: 20vw;
+#bioflexheader {
+ height: 6vw;
 }
 
 #welcome {
@@ -53,32 +51,63 @@ body {
 }
 
 #Navigator {
-    font-size: 30px;
+    font-size: 2vw;
     width: 20vw;
-    color: #747474;
     height: 3vw;
     margin-top: 0px;
-    border-bottom: 6px solid black;
-    letter-spacing: .70em;
+    margin-bottom: 0px;
+    border-bottom: .2vw solid black;
+    letter-spacing: 1vw;
+    padding-top: .3vw;
+    padding-left: .2vw;
 }
 
 #biobox {
     Background-color: #272727;
-    border: 3px solid black;
-    flex-grow: 1;
+    border: .1vw solid black;
+    display: flex;
+    flex: 2 2;
+    flex-direction: column;
     overflow-y: auto;
+    overflow: auto;
+    position: absolute;
+    top: 5.1vw;
+    left: 20.2vw;
+    bottom: 0;
+    right: 0;
+}
+
+#biography {
+    color: #FF652F;
+    float: left;
+    font-size: 3vw;
+    letter-spacing: 1.5vw;
+    margin-left: 15vw;
+
+}
+
+#biopara {
+    font-size: 20px
+}
+
+#biobody {
+    padding-left: 15px;
+}
+
+#achievementbox {
+    padding-left: 15px;
 }
 
 .Text1 {
     font-family: "Allerta Stencil", Sans-serif;
-    color: #747474
+    color: #747474;
 }
 
 .header {
     background-color: #272727;
     height: 10%;
     margin-top: 0px;
-    border: 3px solid black;
+    border: .1vw solid black;
     width: 100vw;
 }
 
@@ -86,11 +115,46 @@ body {
     float: right;
 }
 
+.floatleft {
+    float: left;
+}
+
+.textcolor {
+    color: #747474;
+}
+
+.headercolor {
+    color: #FF652F;
+}
+
 .Navigationbox {
     Height: 90%;
     Width: 20vw;
     background-color: #272727;
-    Border: 3px solid black;
+    Border: .1vw solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.longtext {
+    word-wrap: break-word;
+    width: 1185px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbox {
+    font-size: 1.8vw;
+    width: 20vw;
+    height: 3vw;
+    margin-top: 0px;
+    border-bottom: .2vw solid black;
+    letter-spacing: 1vw;
+    padding-top: .3vw;
+    padding-left: .2vw;
 }
 
 @keyframes typing {
@@ -100,6 +164,26 @@ body {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: #FF652F; }
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: .5vw;
+    height: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #272727; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FF652F; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF652F; 
+  }
