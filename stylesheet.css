@@ -11,6 +11,15 @@ body {
     flex-flow: wrap;
     flex-direction: initial;
     flex-wrap: wrap;
+    background-color: black;
+}
+
+a:visited {
+    color: #ffe400;
+}
+
+a:link {
+    color:#ffe400
 }
 
 #nameImg {
@@ -31,17 +40,17 @@ body {
 #welcome {
     color: #747474;
     overflow: hidden;
-    font-size: 75px;
+    /* font-size: 75px; */
     font-size: 4vw;
     width: 58%;
     border-right: .15em solid #FF652F;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    justify-content: center;
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+    /* justify-content: center; */
+    animation: typing 3.5s steps(40, end),
+ blink-caret .75s step-end infinite;
+    line-height: 10vh;
 }
 
 #welcome-spacing {
@@ -70,11 +79,12 @@ body {
     flex-direction: column;
     overflow-y: auto;
     overflow: auto;
-    position: absolute;
-    top: 5.1vw;
+    top: 10.2vh;
     left: 20.2vw;
     bottom: 0;
     right: 0;
+    position: fixed;
+    word-wrap: break-word;
 }
 
 #biography {
@@ -111,10 +121,11 @@ body {
 
 .header {
     background-color: #272727;
-    height: 10%;
+    height: 10vh;
     margin-top: 0px;
     border: .1vw solid black;
     width: 100vw;
+    position: relative;
 }
 
 .floatright {
@@ -134,7 +145,7 @@ body {
 }
 
 .Navigationbox {
-    Height: 90%;
+    Height: 90vh;
     Width: 20vw;
     background-color: #272727;
     Border: .1vw solid black;
@@ -144,7 +155,6 @@ body {
 
 .longtext {
     word-wrap: break-word;
-    width: 1185px;
 }
 
 .flex-row {
@@ -161,6 +171,10 @@ body {
     letter-spacing: 1vw;
     padding-top: .3vw;
     padding-left: .2vw;
+}
+
+.navlinks {
+    text-decoration: none;
 }
 
 /* -- animations -- */
