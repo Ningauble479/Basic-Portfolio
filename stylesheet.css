@@ -98,9 +98,15 @@ body {
     padding-left: 15px;
 }
 
-.Text1 {
+/* -- google font types with colors -- */
+.stencilGray {
     font-family: "Allerta Stencil", Sans-serif;
     color: #747474;
+}
+
+.stencilOrange {
+    font-family: "Allerta Stencil", Sans-serif;
+    color: #FF652F;
 }
 
 .header {
@@ -157,6 +163,7 @@ body {
     padding-left: .2vw;
 }
 
+/* -- animations -- */
 @keyframes typing {
     from { max-width: 0 }
     to { max-width: 100% }
@@ -167,23 +174,21 @@ body {
     50% { border-color: #FF652F; }
 }
 
-/* width */
+/* -- scrollbar editing --*/
+
 ::-webkit-scrollbar {
     width: .5vw;
     height: 0;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #272727; 
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #FF652F; 
-  }
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #FF652F; 
-  }
+}

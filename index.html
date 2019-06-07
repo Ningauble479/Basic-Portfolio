@@ -9,23 +9,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 </head>
 <body>
-
+    <!--This is the header. Moving this to a javascript file so that it shows up site wide.-->
     <header class="header">
         <div id="welcome-spacing">
             <h1 id="welcome">Welcome to my portfolio!</h1>
         </div>
     </header>
-
+    <!--This is the left side navbox and all subsequent boxes and buttons within. Also hoping to move to js file.-->
     <div class="Navigationbox">
-        <p id="Navigator" class="textcolor">Navigator</p>
+        <p id="Navigator" class="headercolor">Navigator</p>
         <p class="textcolor navbox">Biography</p>
     </div>
-
+    <!--Main body of page containing biography.-->
     <div id="biobox">
+        <!--This is the head of the main bio box. It contains my picture, signature and a discriptory biography header to explain what the page is. Responsive.-->
         <div id="bioflexheader" class="flex-row">
                 <img id="nameImg" src="https://cdn0.iconfinder.com/data/icons/employee-and-business-fill/512/Business_man-512.png" />
-                <h1 class="Text1" id="signature">Devon Owen</h1>
-            <h1 id="biography">Biography</h1>
+                <h1 class="stencilGray" id="signature">Devon Owen</h1>
+            <h1 id="biography" class="stencilOrange">Biography</h1>
         </div>
         <div class="floatleft" id="biobody">
             <h1 class="headercolor">Where did i learn to code</h1>
@@ -34,7 +35,7 @@
                 enjoyed the coding aspect of tech even more than the management side of it. I spent around 2-3 years learning as much code by myself as i could
                 and then took a class on full stack development.
             </p>
-
+            <!--Flexbox within main flexbox containing achievements and another box to the right side.-->
         </div>
         <div id="achievementbox">
                 <h1 class="headercolor">achievements</h1>
