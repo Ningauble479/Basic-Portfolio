@@ -22,6 +22,10 @@ a:link {
     color:#ffe400
 }
 
+::selection {
+    background-color: whitesmoke;
+}
+
 #nameImg {
     width: 5.5vw;
     Height: 5vw;
@@ -71,7 +75,7 @@ a:link {
     padding-left: .2vw;
 }
 
-#biobox {
+#contentbox {
     Background-color: #272727;
     border: .1vw solid black;
     display: flex;
@@ -167,10 +171,15 @@ a:link {
     width: 20vw;
     height: 3vw;
     margin-top: 0px;
+    margin-bottom: 0px;
     border-bottom: .2vw solid black;
     letter-spacing: 1vw;
     padding-top: .3vw;
     padding-left: .2vw;
+    background-color: #242424;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
 }
 
 .navlinks {

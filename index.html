@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My portfolio!</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
     <!--This is the header. Moving this to a javascript file so that it shows up site wide.-->
     <header class="header">
@@ -18,38 +22,60 @@
     <!--This is the left side navbox and all subsequent boxes and buttons within. Also hoping to move to js file.-->
     <div class="Navigationbox">
         <p id="Navigator" class="headercolor">Navigator</p>
-        <p class="textcolor navbox"><a href="index.html" class="navlinks">Biography</a></p>
+        <button class="textcolor navbox" id="biobutton">Biography</button>
+        <button class="textcolor navbox" id="testbutton">test</button>
     </div>
-    <!--Main body of page containing biography.-->
-    <div id="biobox">
-        <!--This is the head of the main bio box. It contains my picture, signature and a discriptory biography header to explain what the page is. Responsive.-->
-        <div id="bioflexheader" class="flex-row">
-                <img id="nameImg" src="https://cdn0.iconfinder.com/data/icons/employee-and-business-fill/512/Business_man-512.png" />
+    <!--Main body of page.-->
+    <div id="contentbox">
+        <!--The div element containing content of currently selected button.-->
+        <div id="biographybox">
+            <!--This is the head of the main bio box. It contains my picture, signature and a discriptory biography header to explain what the page is. Responsive.-->
+            <div id="bioflexheader" class="flex-row">
+                <img id="nameImg"
+                    src="https://cdn0.iconfinder.com/data/icons/employee-and-business-fill/512/Business_man-512.png" />
                 <h1 class="stencilGray" id="signature">Devon Owen</h1>
-            <h1 id="biography" class="stencilOrange">Biography</h1>
-        </div>
-        <div class="floatleft" id="biobody">
-            <h1 class="headercolor">Where did i learn to code</h1>
-            <p class="longtext textcolor " id="biopara">I started working with computers around 15 when i built my very first computer. Ever since then ive had an extreme
-                passion for all things tech. A few years later i got my A+ and began to learn about managing large server databases. I quickly found that i
-                enjoyed the coding aspect of tech even more than the management side of it. I spent around 2-3 years learning as much code by myself as i could
-                and then took a class on full stack development.
-            </p>
-            <!--Flexbox within main flexbox containing achievements and another box to the right side.-->
-        </div>
-        <div id="achievementbox">
+                <h1 id="biography" class="stencilOrange">Biography</h1>
+            </div>
+            <div class="floatleft" id="biobody">
+                <h1 class="headercolor">Where did i learn to code</h1>
+                <p class="longtext textcolor " id="biopara">I started working with computers around 15 when i built my
+                    very first computer. Ever since then ive had an extreme
+                    passion for all things tech. A few years later i got my A+ and began to learn about managing large
+                    server databases. I quickly found that i
+                    enjoyed the coding aspect of tech even more than the management side of it. I spent around 2-3 years
+                    learning as much code by myself as i could
+                    and then took a class on full stack development.
+                </p>
+                <!--Flexbox within main flexbox containing achievements and another box to the right side.-->
+            </div>
+            <div id="achievementbox">
                 <h1 class="headercolor">achievements</h1>
                 <ul>
                     <li class="textcolor">Got CompTIA A+ certification.</li>
                     <li class="textcolor">Learned front end coding.</li>
                     <li class="textcolor">Took class on full stack development. (tbd)</li>
-    
+
                 </ul>
-                <p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga distinctio voluptatum minima, aut repudiandae nam at explicabo. Voluptates incidunt, aliquid quaerat facere quisquam soluta laudantium, rerum hic sequi libero aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, mollitia! Similique nihil incidunt vitae necessitatibus, numquam ratione impedit illum dolorem laudantium quos facere, quidem esse fuga id optio unde explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis alias quidem repudiandae commodi, deserunt, modi velit inventore, fugiat vero veritatis ex? Eum assumenda iste corrupti, suscipit rem sed beatae nam!
-                Nemo quia, consectetur maiores temporibus quae atque fugit tenetur dolorem quasi modi accusantium esse iusto dolores labore eum. Commodi quo harum dolores eos aliquam est qui a asperiores ab! Modi.
-                Facilis veniam quia magni maiores temporibus, repellendus minima illo, hic aliquid laudantium autem doloribus! Animi harum similique numquam ducimus praesentium. Repudiandae illo unde consequatur vitae, rem tempora praesentium. Reiciendis, dolore.
-                Unde praesentium qui iste, placeat blanditiis adipisci labore doloremque optio voluptate, voluptatem iusto fugit ab aliquid dolore facere vel doloribus eos alias quod modi debitis illo consectetur cupiditate amet? Ipsum?
-                Quis corporis cum, consequatur omnis repudiandae itaque quasi, ut quas unde, at necessitatibus! Reiciendis culpa impedit iste repellat perferendis fugiat corrupti ipsa, dolore, ducimus totam assumenda alias maxime magnam laborum.</p>
+                <p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga distinctio voluptatum
+                    minima, aut repudiandae nam at explicabo. Voluptates incidunt, aliquid quaerat facere quisquam
+                    soluta laudantium, rerum hic sequi libero aut. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Repudiandae, mollitia! Similique nihil incidunt vitae necessitatibus, numquam ratione impedit
+                    illum dolorem laudantium quos facere, quidem esse fuga id optio unde explicabo! Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Corporis alias quidem repudiandae commodi, deserunt, modi
+                    velit inventore, fugiat vero veritatis ex? Eum assumenda iste corrupti, suscipit rem sed beatae nam!
+                    Nemo quia, consectetur maiores temporibus quae atque fugit tenetur dolorem quasi modi accusantium
+                    esse iusto dolores labore eum. Commodi quo harum dolores eos aliquam est qui a asperiores ab! Modi.
+                    Facilis veniam quia magni maiores temporibus, repellendus minima illo, hic aliquid laudantium autem
+                    doloribus! Animi harum similique numquam ducimus praesentium. Repudiandae illo unde consequatur
+                    vitae, rem tempora praesentium. Reiciendis, dolore.
+                    Unde praesentium qui iste, placeat blanditiis adipisci labore doloremque optio voluptate, voluptatem
+                    iusto fugit ab aliquid dolore facere vel doloribus eos alias quod modi debitis illo consectetur
+                    cupiditate amet? Ipsum?
+                    Quis corporis cum, consequatur omnis repudiandae itaque quasi, ut quas unde, at necessitatibus!
+                    Reiciendis culpa impedit iste repellat perferendis fugiat corrupti ipsa, dolore, ducimus totam
+                    assumenda alias maxime magnam laborum.</p>
+
+            </div>
         </div>
     </div>
 
