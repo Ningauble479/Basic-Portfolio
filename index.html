@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My portfolio!</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="cssStylesheets/stylesheet.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
-    <!--This is the header. Moving this to a javascript file so that it shows up site wide.-->
+    <!--This is the header.-->
     <header class="header">
         <div id="welcome-spacing">
             <h1 id="welcome">Welcome to my portfolio!</h1>
         </div>
     </header>
-    <!--This is the left side navbox and all subsequent boxes and buttons within. Also hoping to move to js file.-->
+    <!--This is the left side navbox and all subsequent boxes and buttons within.-->
     <div class="Navigationbox">
         <p id="Navigator" class="headercolor">Navigator</p>
         <button class="textcolor navbox" id="biobutton">Biography</button>
-        <button class="textcolor navbox" id="testbutton">test</button>
+        <button class="textcolor navbox" id="contactbutton">Contact</button>
+        <button class="textcolor navbox" id="galleryButton">Gallery</button>
     </div>
-    <!--Main body of page.-->
+    <!--Main body of page. Changes based on Ajax .load function through jquery. Will not work locally on chrome. Works just fine on webserver aka github link.-->
     <div id="contentbox">
         <!--The div element containing content of currently selected button.-->
         <div id="biographybox">

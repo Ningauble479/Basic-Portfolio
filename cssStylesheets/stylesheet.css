@@ -1,3 +1,8 @@
+/* Please note. There is a lot of random unecesarry css from experimentation that does nothing at the moment. I do want to take
+some time to edit out the unecessary code and clean it up a bit but at the moment im more focused on getting trasitions to work
+on my .load ajax functions. That is my next step! */
+
+/* overarching changes to entire tags */
 html {
     height:100%;
 }
@@ -12,6 +17,9 @@ body {
     flex-direction: initial;
     flex-wrap: wrap;
     background-color: black;
+}
+button {
+    padding: 0px;
 }
 
 a:visited {
@@ -72,7 +80,7 @@ a:link {
     border-bottom: .2vw solid black;
     letter-spacing: 1vw;
     padding-top: .3vw;
-    padding-left: .2vw;
+    padding-left: 1.5vw;
 }
 
 #contentbox {
@@ -89,6 +97,7 @@ a:link {
     right: 0;
     position: fixed;
     word-wrap: break-word;
+    
 }
 
 #biography {
@@ -110,6 +119,19 @@ a:link {
 
 #achievementbox {
     padding-left: 15px;
+}
+
+#contactHead {
+    padding-left: 15px;
+}
+
+#biographybox {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#RIPic {
+    width:200px;
+    height:200px;
 }
 
 /* -- google font types with colors -- */
@@ -186,6 +208,17 @@ a:link {
     text-decoration: none;
 }
 
+.galleryParagraphs {
+    width: 300px;
+    padding-left: 100px;
+}
+
+.galleryPictures {
+    width: 300px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
 /* -- animations -- */
 @keyframes typing {
     from { max-width: 0 }
@@ -195,6 +228,15 @@ a:link {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #FF652F; }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }    
 }
 
 /* -- scrollbar editing --*/
