@@ -1,0 +1,259 @@
+/* Please note. There is a lot of random unecesarry css from experimentation that does nothing at the moment. I do want to take
+some time to edit out the unecessary code and clean it up a bit but at the moment im more focused on getting trasitions to work
+on my .load ajax functions. That is my next step! */
+
+/* overarching changes to entire tags */
+html {
+    height:100%;
+}
+
+body {
+    height:100%;
+    margin:0;
+    overflow: hidden;
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: wrap;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    background-color: black;
+}
+button {
+    padding: 0px;
+}
+
+a:visited {
+    color: #ffe400;
+}
+
+a:link {
+    color:#ffe400
+}
+
+::selection {
+    background-color: whitesmoke;
+}
+
+#nameImg {
+    width: 5.5vw;
+    Height: 5vw;
+    float: left;
+    margin-top: .5vw;
+}
+
+#signature {
+    font-size: 3vw;
+}
+
+#bioflexheader {
+ height: 6vw;
+}
+
+#welcome {
+    color: #747474;
+    overflow: hidden;
+    /* font-size: 75px; */
+    font-size: 4vw;
+    width: 58%;
+    border-right: .15em solid #FF652F;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    /* justify-content: center; */
+    animation: typing 3.5s steps(40, end),
+ blink-caret .75s step-end infinite;
+    line-height: 10vh;
+}
+
+#welcome-spacing {
+    text-align: center;
+    width: 100%;
+
+}
+
+#Navigator {
+    font-size: 2vw;
+    width: 20vw;
+    height: 3vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: .2vw solid black;
+    letter-spacing: 1vw;
+    padding-top: .3vw;
+    padding-left: 1.5vw;
+}
+
+#contentbox {
+    Background-color: #272727;
+    border: .1vw solid black;
+    display: flex;
+    flex: 2 2;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow: auto;
+    top: 10.2vh;
+    left: 20.2vw;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    word-wrap: break-word;
+    
+}
+
+#biography {
+    color: #FF652F;
+    float: left;
+    font-size: 3vw;
+    letter-spacing: 1.5vw;
+    margin-left: 15vw;
+
+}
+
+#biopara {
+    font-size: 20px
+}
+
+#biobody {
+    padding-left: 15px;
+}
+
+#achievementbox {
+    padding-left: 15px;
+}
+
+#contactHead {
+    padding-left: 15px;
+}
+
+#biographybox {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#RIPic {
+    width:200px;
+    height:200px;
+}
+
+/* -- google font types with colors -- */
+.stencilGray {
+    font-family: "Allerta Stencil", Sans-serif;
+    color: #747474;
+}
+
+.stencilOrange {
+    font-family: "Allerta Stencil", Sans-serif;
+    color: #FF652F;
+}
+
+.header {
+    background-color: #272727;
+    height: 10vh;
+    margin-top: 0px;
+    border: .1vw solid black;
+    width: 100vw;
+    position: relative;
+}
+
+.floatright {
+    float: right;
+}
+
+.floatleft {
+    float: left;
+}
+
+.textcolor {
+    color: #747474;
+}
+
+.headercolor {
+    color: #FF652F;
+}
+
+.Navigationbox {
+    Height: 90vh;
+    Width: 20vw;
+    background-color: #272727;
+    Border: .1vw solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.longtext {
+    word-wrap: break-word;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbox {
+    font-size: 1.8vw;
+    width: 20vw;
+    height: 3vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: .2vw solid black;
+    letter-spacing: 1vw;
+    padding-top: .3vw;
+    padding-left: .2vw;
+    background-color: #242424;
+    border-top: 0px;
+    border-left: none;
+    border-right: none;
+}
+
+.navlinks {
+    text-decoration: none;
+}
+
+.galleryParagraphs {
+    width: 300px;
+    padding-left: 100px;
+}
+
+.galleryPictures {
+    width: 300px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+/* -- animations -- */
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FF652F; }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }    
+}
+
+/* -- scrollbar editing --*/
+
+::-webkit-scrollbar {
+    width: .5vw;
+    height: 0;
+}
+  
+::-webkit-scrollbar-track {
+    background: #272727; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF652F; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #FF652F; 
+}
